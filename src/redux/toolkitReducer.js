@@ -2,7 +2,8 @@ import {createAction, createReducer} from "@reduxjs/toolkit";
 
 const initialState = {
     count: 0,
-    todos: ['1 дело', '2 дело', '3 дело', '4 дело', '5 дело']
+    todos: ['1 дело', '2 дело', '3 дело', '4 дело', '5 дело'],
+    name: 'Pier Jioko',
 }
 
 export const increment = createAction('INCREMENT');
@@ -16,5 +17,3 @@ export default createReducer (initialState, {
         state.count = state.count - 1;
     },
 })
-
-console.log(decrement)
